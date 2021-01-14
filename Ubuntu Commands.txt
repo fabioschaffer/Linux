@@ -1,0 +1,7 @@
+Acessar diretórios root:
+1) Abrir o aplicativo Files.
+2) Pressionar CTRL + L.
+3) Digitar o diretórios desejado na seguinte sintaxe:
+	admin:///NOME_DIRETORIO
+	Exemplo:
+	admin:///var
