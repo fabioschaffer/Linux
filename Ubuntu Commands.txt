@@ -1,3 +1,6 @@
+Alterar para permissão de root:
+sudo su
+
 Acessar diretórios root:
 1) Abrir o aplicativo Files.
 2) Pressionar CTRL + L.
@@ -5,3 +8,20 @@ Acessar diretórios root:
 	admin:///NOME_DIRETORIO
 	Exemplo:
 	admin:///var
+OU
+Abrir o Files, abrir qualquer pasta e clicar com botão direito e selecionar 'Open as Administrator'. Será aberto outro Files em modo root.
+
+Montar diretório compartilhado entre ubuntu e uma máquina windows:
+1) Compartilhar um diretório no windows.
+2) Criar, no ubuntu, o diretório /mnt/files
+3) Instalar no ubuntu o pacote cifs-utils
+4) Executar comando (no ubuntu): mount -t cifs -o username=USERNAME,password=PASSWORD //1927.0.0.01/files /mnt/files
+Observação: O compartilhamento é esquecido ao reiniciar a máquina.
+
+Instalar pacote:
+sintaxe: apt-get install <pacote>
+exemplo: apt-get install cifs-utils
+
+Verificar se o pacote está instalado:
+sintaxe: dpkg -l {package_name}
+exemplo: dpkg -l docker

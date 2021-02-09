@@ -1,2 +1,1 @@
-# Linux
- 
+Contém alguns comandos para serem executados no Linux.
